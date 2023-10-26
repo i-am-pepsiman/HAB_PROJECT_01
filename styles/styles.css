@@ -1,0 +1,12 @@
+.main_header {
+    color: brown;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+.my_button {
+    padding: 10px 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
