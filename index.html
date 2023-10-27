@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/styles.css">
-        <script src="./script.js" defer></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APRENDE A TOCAR LA BATERIA CON EL EQUIPO A</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1>Aprende a tocar la bateria con EL EQUIPO A</h1>
 
-    <body>
-        <h1 class="main_header">Hello people!</h1>
-        <button class="my_button" id="my_button">Click here to print A SALUTATION TO YOU!</button>
-    </body>
+    <div class="bateria">
+        <button class="button" id="crash">Crash (R)</button>
+        <button class="button" id="hihat_close">HiHat Closed (Q)</button>
+        <button class="button" id="hihat_open">HiHat Open (W)</button>
+        <button class="button" id="kick">Kick (Space)</button>
+        <button class="button" id="ride">Ride (E)</button>
+        <button class="button" id="snare">Snare (D)</button>
+        <button class="button" id="tom_high">Tom High (F)</button>
+        <button class="button" id="tom_low">Tom Low (A)</button>
+        <button class="button" id="tom_mid">Tom Mid (S)</button>
+    </div>
+
+    <audio id="sound_crash" src="assets/sonidos/crash.wav" preload="auto"></audio>
+    <audio id="sound_hihat_close" src="assets/sonidos/hihat-close.wav" preload="auto"></audio>
+    <audio id="sound_hihat_open" src="assets/sonidos/hihat-open.wav" preload="auto"></audio>
+    <audio id="sound_kick" src="assets/sonidos/kick.wav" preload="auto"></audio>
+    <audio id="sound_ride" src="assets/sonidos/ride.wav" preload="auto"></audio>
+    <audio id="sound_snare" src="assets/sonidos/snare.wav" preload="auto"></audio>
+    <audio id="sound_tom_high" src="assets/sonidos/tom-high.wav" preload="auto"></audio>
+    <audio id="sound_tom_low" src="assets/sonidos/tom-low.wav" preload="auto"></audio>
+    <audio id="sound_tom_mid" src="assets/sonidos/tom-mid.wav" preload="auto"></audio>
+</body>
 </html>
