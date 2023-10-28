@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    text-shadow: 5px 5px 3px rgb(185, 185, 185);
+}
+
+.button {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+button#button1 {
+    background-color: #41414D;
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+
+
+}
+
+button#button2 {
+    background-color: #41414D;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 15%;
+}
+
+button#button3 {
+    background-color: #41414D;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+}
+
+button#button4 {
+    background-color: #41414D;
+    border-radius: 50%;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+}
+
+button#button5 {
+    background-color: #41414D;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 62%;
+}
+
+button#button6 {
+    background-color: #B1B8C0;
+    border-radius: 50%;
+    position: absolute;
+    top: 90%;
+    left: 35%;
+}
+
+button#button7 {
+    background-color: #B1B8C0;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 35%
+}
+
+button#button8 {
+    background-color: #B1B8C0;
+    border-radius: 50%;
+    position: absolute;
+    top: 90%;
+    left: 55%;
+}
+
+button#button9 {
+    background-color: #B1B8C0;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 55%;
+}
