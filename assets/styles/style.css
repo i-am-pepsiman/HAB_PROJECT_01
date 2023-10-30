@@ -19,75 +19,80 @@ h1 {
     display: block;
 }
 
-button#button1 {
+button#crash {
     background-color: #41414D;
     border-radius: 50%;
     position: absolute;
-    left: 30%;
+    top: 60%;
+    left: 75%;
 
 
 }
 
-button#button2 {
+button#hihat_close {
     background-color: #41414D;
     position: absolute;
     border-radius: 50%;
-    top: 50%;
+    top: 95%;
     left: 15%;
 }
 
-button#button3 {
+button#hihat_open {
     background-color: #41414D;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 75%;
+    top: 65%;
+    left: 20%;
 }
 
-button#button4 {
+button#kick {
     background-color: #41414D;
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    width: 400px;
+    height: 400px;
+}
+
+button#ride {
+    background-color: #41414D;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+}
+
+button#snare {
+    background-color: #41414D;
+    border-radius: 50%;
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    width: 300px;
+    height: 300px;
+}
+
+button#tom_high {
+    background-color: #B1B8C0;
     border-radius: 50%;
     position: absolute;
     top: 70%;
-    left: 45%;
+    left: 60%
 }
 
-button#button5 {
-    background-color: #41414D;
-    border-radius: 50%;
-    position: absolute;
-    top: 15%;
-    left: 62%;
-}
-
-button#button6 {
+button#tom_low {
     background-color: #B1B8C0;
     border-radius: 50%;
     position: absolute;
-    top: 90%;
-    left: 35%;
+    top: 50%;
+    left: 36%;
 }
 
-button#button7 {
+button#tom_mid {
     background-color: #B1B8C0;
     border-radius: 50%;
     position: absolute;
-    top: 45%;
-    left: 35%
-}
-
-button#button8 {
-    background-color: #B1B8C0;
-    border-radius: 50%;
-    position: absolute;
-    top: 90%;
-    left: 55%;
-}
-
-button#button9 {
-    background-color: #B1B8C0;
-    border-radius: 50%;
-    position: absolute;
-    top: 45%;
-    left: 55%;
+    top: 50%;
+    left: 50%;
 }
