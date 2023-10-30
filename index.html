@@ -11,19 +11,20 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
+    <div class="banner">
+        <img src="assets/images/thereItsNotPlanB.png" alt="logotipoCabecera">
+    </div>
+    <h1 class="tituloPrincipal">Aprende a tocar la batería con el equipo A</h1>
 
     <!--Introduccion de etiquetas de estructuracion basica (header,main,footer,aside)-->
-    <header class="bannerYenlaces">
+    <header>
 
 
         <!--INTRODUCCION DE BANNER EN CABECERA CON EL LOGO, EL TITULO PRINCIPAL DEL PROYECTO (IRIAN A LA IZQUIERDA) -->
-        <div class="banner">
-            <img src="assets/images/thereItsNotPlanB.png" alt="logotipoCabecera">
-            <h1 class="tituloPrincipal">BATERIA EN JAVASCRIPT</h1>
-        </div>
-
+    
+       
         <!--Introduccion del menu de navegacion entre ventanas(estan conectadas) (IRIAN A LA DERECHA)-->
-        <nav class="enlacesVentanas">
+        <nav class="navigation_bar">
             <ul>
                 <!--Conexion entre ventanas (CREACION DE LOS HTML)-->
                 <li><a href="index.html">INICIO</a></li>
@@ -36,24 +37,20 @@
 
     </header>
 
-
-    <!--Encapsulo el contenido principal en un main-->
     <main>
-        <!--Cambio h1 por h2-->
-        <h2>Aprende a tocar la bateria con EL EQUIPO A</h2>
-
-        <div class="bateria">
-            <button class="button" id="crash">Crash (R)</button>
-            <button class="button" id="hihat_close">HiHat Closed (Q)</button>
-            <button class="button" id="hihat_open">HiHat Open (W)</button>
-            <button class="button" id="kick">Kick (C)</button>
-            <button class="button" id="ride">Ride (E)</button>
-            <button class="button" id="snare">Snare (D)</butto>
-            <button class="button" id="tom_high">Tom High (F)</button>
-            <button class="button" id="tom_low">Tom Low (A)</button>
-            <button class="button" id="tom_mid">Tom Mid (S)</button>
+        <div class="button_container">
+        <ul class="bateria">
+            <li><button class="button" id="crash">Crash (R)</button></li>
+            <li><button class="button" id="hihat_close">HiHat Closed (Q)</button></li>
+            <li><button class="button" id="hihat_open">HiHat Open (W)</button></li>
+            <li><button class="button" id="kick">Kick (C)</button></li>
+            <li><button class="button" id="ride">Ride (E)</button></li>
+            <li><button class="button" id="snare">Snare (D)</button></li>
+            <li><button class="button" id="tom_high">Tom High (F)</button></li>
+            <li><button class="button" id="tom_low">Tom Low (A)</button></li>
+            <li><button class="button" id="tom_mid">Tom Mid (S)</button></li>
+        </ul>
         </div>
-
         <audio id="sound_crash" src="assets/sonidos/crash.wav" preload="auto"></audio>
         <audio id="sound_hihat_close" src="assets/sonidos/hihat-close.wav" preload="auto"></audio>
         <audio id="sound_hihat_open" src="assets/sonidos/hihat-open.wav" preload="auto"></audio>
