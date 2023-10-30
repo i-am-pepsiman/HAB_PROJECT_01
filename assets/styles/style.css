@@ -4,95 +4,71 @@ body {
     box-sizing: border-box;
 
 }
-
+ul li{
+    list-style: none;
+}
 h1 {
     font-size: 2em;
     color: black;
     text-align: center;
     text-shadow: 5px 5px 3px rgb(185, 185, 185);
+    margin-top: -10%;
 }
 
+ul.bateria{
+    display: grid;
+    grid-template-areas: 
+            "a a a"
+            "b c c"
+            "b c c";
+    gap: 5px;
+    height: 1vh;            
+}
 .button {
-    background-color: aqua;
-    width: 200px;
-    height: 200px;
-    display: block;
+    background-color: rgb(246, 75, 75);
+    width: 150px;
+    height: 150px;
+    display: grid;
+    border: 3px solid rgb(246, 75, 75);
+    justify-content: center;
+    align-content: center;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
 }
-
-button#crash {
-    background-color: #41414D;
-    border-radius: 50%;
-    position: absolute;
-    top: 60%;
-    left: 75%;
-
-
+.button_container{
+    display: flex;
+    width: 70%;
+    margin-left: 30%;
 }
-
-button#hihat_close {
-    background-color: #41414D;
-    position: absolute;
-    border-radius: 50%;
-    top: 95%;
-    left: 15%;
+.navigation_bar{
+    background-color: black;
+    margin-left: 400px;
+    margin-right: 400px;
 }
-
-button#hihat_open {
-    background-color: #41414D;
-    border-radius: 50%;
-    position: absolute;
-    top: 65%;
-    left: 20%;
+.navigation_bar ul{
+    display: flex;
+    flex-direction: row;
+    
 }
-
-button#kick {
-    background-color: #41414D;
-    border-radius: 50%;
-    position: absolute;
-    top: 100%;
-    left: 35%;
-    width: 400px;
-    height: 400px;
+.navigation_bar li{
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    
 }
-
-button#ride {
-    background-color: #41414D;
-    border-radius: 50%;
-    position: absolute;
-    top: 40%;
-    left: 65%;
+.navigation_bar a{
+    text-decoration: none;
+    color: white;
 }
-
-button#snare {
-    background-color: #41414D;
-    border-radius: 50%;
-    position: absolute;
-    top: 75%;
-    left: 40%;
-    width: 300px;
-    height: 300px;
+.banner{
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
 }
-
-button#tom_high {
-    background-color: #B1B8C0;
-    border-radius: 50%;
-    position: absolute;
-    top: 70%;
-    left: 60%
-}
-
-button#tom_low {
-    background-color: #B1B8C0;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 36%;
-}
-
-button#tom_mid {
-    background-color: #B1B8C0;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+div.banner img{
+    border: 1px solid black;
+    width: 150px;
 }
