@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APRENDE A TOCAR LA BATERIA CON EL EQUIPO A</title>
+    <title>ATEAM Drumpad System</title>
 
     <!--LINEA DEL FAVICON (FALTA LOGOTIPO)-->
     <link rel="icon" type="image/vnd.icon" href="assets/images/thereItsNotPlanB.png">
@@ -12,33 +12,39 @@
 </head>
 <body>
     <header>
-        <div class="logo_image">
-            <img src="assets/images/thereItsNotPlanB.png" alt="logotipoCabecera">
+        <div class="logo_square"></div>
+        <div class="contents_square">
+            <h1>ATEAM DRUMPAD SYSTEM</h1> 
+            <nav class="navbar">
+                <ul id="navbar_list">
+                    <li class="navbar_list_item"><a href="index.html">Inicio</a></li>
+                    <li class="navbar_separator"></li>
+                    <li class="navbar_list_item"><a href="02_historiaDeLaBateria.html">Historia de la Batería</a></li>
+                    <li class="navbar_separator"></li>
+                    <li class="navbar_list_item"><a href="03_noticiasRelacionadas.html">Noticias Relacionadas</a></li>
+                    <li class="navbar_separator"></li>
+                    <li class="navbar_list_item"><a href="04_comparadorBaterias.html">Arma tu batería!</a></li>
+                    <li class="navbar_separator"></li>
+                    <li class="navbar_list_item"><a href="05_sobreNosotros.html">Sobre nosotros</a></li>
+                </ul>
+            </nav>
         </div>
-        <h1>Aprende a tocar la batería con el equipo A</h1> 
-        <nav class="navbar">
-            <ul id="navbar_list">
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="02_historiaDeLaBateria.html">HISTORIA DE LA BATERIA</a></li>
-                <li><a href="03_noticiasRelacionadas.html">NOTICIAS RELACIONADAS</a></li>
-                <li><a href="04_comparadorBaterias.html">COMPARADOR PRECIOS DE BATERIAS</a></li>
-                <li><a href="05_sobreNosotros.html">SOBRE NOSOTROS</a></li>
-            </ul>
-        </nav>
     </header>
 
+    <div class="wrapper">
     <main>
         <div class="button_container">
-            <ul class="bateria">
-                <li><button class="button" id="crash">Crash (R)</button></li>
-                <li><button class="button" id="hihat_close">HiHat Closed (Q)</button></li>
-                <li><button class="button" id="hihat_open">HiHat Open (W)</button></li>
-                <li><button class="button" id="kick">Kick (C)</button></li>
-                <li><button class="button" id="ride">Ride (E)</button></li>
-                <li><button class="button" id="snare">Snare (D)</button></li>
-                <li><button class="button" id="tom_high">Tom High (F)</button></li>
-                <li><button class="button" id="tom_low">Tom Low (A)</button></li>
-                <li><button class="button" id="tom_mid">Tom Mid (S)</button></li>
+            <h3>PAD</h3>
+            <ul class="drumpad">
+                <li><button class="drumpad_btn" id="crash">Crash (R)</button></li>
+                <li><button class="drumpad_btn" id="hihat_close">HiHat Closed (Q)</button></li>
+                <li><button class="drumpad_btn" id="hihat_open">HiHat Open (W)</button></li>
+                <li><button class="drumpad_btn" id="kick">Kick (C)</button></li>
+                <li><button class="drumpad_btn" id="ride">Ride (E)</button></li>
+                <li><button class="drumpad_btn" id="snare">Snare (D)</button></li>
+                <li><button class="drumpad_btn" id="tom_high">Tom High (F)</button></li>
+                <li><button class="drumpad_btn" id="tom_low">Tom Low (A)</button></li>
+                <li><button class="drumpad_btn" id="tom_mid">Tom Mid (S)</button></li>
             </ul>
         </div>
 
@@ -54,21 +60,35 @@
 
         <aside class="keys_chart">
             <ul>
-                <li>Crash R </li>
-                <li>Ride E </li>
-                <li>HiHat Open W </li>
-                <li>HiHat Close Q </li>
-                <li>Tom High F </li>
-                <li>Tom Mid S </li>
-                <li>Kick C </li>
-                <li>Tom Low A </li>
-                <li>Snare D </li>
+                <li>CUERPO</li>
+                <li>Crash</li>
+                <li>Ride</li>
+                <li>HiHat Open</li>
+                <li>HiHat Close</li>
+                <li>Tom High</li>
+                <li>Tom Mid</li>
+                <li>Kick</li>
+                <li>Tom Low</li>
+                <li>Snare</li>
+            </ul>
+            <ul>
+                <li>TECLA</li>
+                <li>R</li>
+                <li>E</li>
+                <li>W</li>
+                <li>Q</li>
+                <li>F</li>
+                <li>S</li>
+                <li>C</li>
+                <li>A</li>
+                <li>D</li>
             </ul>
         </aside>
     </main>
-        
-    <footer class="footer"> 
-        <p>&copy; EQUIPO A - Andrea, Martin, Rodrigo, Cristina</p>
+</div>
+
+    <footer> 
+        <p>&copy; EQUIPO A - Andrea, Martin, Rodrigo, Cristina.</p>
     </footer> 
 
 </body>
