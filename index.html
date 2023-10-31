@@ -11,22 +11,13 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <div class="banner">
-        <img src="assets/images/thereItsNotPlanB.png" alt="logotipoCabecera">
-    </div>
-    <h1 class="tituloPrincipal">Aprende a tocar la batería con el equipo A</h1>
-
-    <!--Introduccion de etiquetas de estructuracion basica (header,main,footer,aside)-->
     <header>
-
-
-        <!--INTRODUCCION DE BANNER EN CABECERA CON EL LOGO, EL TITULO PRINCIPAL DEL PROYECTO (IRIAN A LA IZQUIERDA) -->
-    
-       
-        <!--Introduccion del menu de navegacion entre ventanas(estan conectadas) (IRIAN A LA DERECHA)-->
-        <nav class="navigation_bar">
-            <ul>
-                <!--Conexion entre ventanas (CREACION DE LOS HTML)-->
+        <div class="logo_image">
+            <img src="assets/images/thereItsNotPlanB.png" alt="logotipoCabecera">
+        </div>
+        <h1>Aprende a tocar la batería con el equipo A</h1> 
+        <nav class="navbar">
+            <ul id="navbar_list">
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="02_historiaDeLaBateria.html">HISTORIA DE LA BATERIA</a></li>
                 <li><a href="03_noticiasRelacionadas.html">NOTICIAS RELACIONADAS</a></li>
@@ -34,23 +25,23 @@
                 <li><a href="05_sobreNosotros.html">SOBRE NOSOTROS</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
         <div class="button_container">
-        <ul class="bateria">
-            <li><button class="button" id="crash">Crash (R)</button></li>
-            <li><button class="button" id="hihat_close">HiHat Closed (Q)</button></li>
-            <li><button class="button" id="hihat_open">HiHat Open (W)</button></li>
-            <li><button class="button" id="kick">Kick (C)</button></li>
-            <li><button class="button" id="ride">Ride (E)</button></li>
-            <li><button class="button" id="snare">Snare (D)</button></li>
-            <li><button class="button" id="tom_high">Tom High (F)</button></li>
-            <li><button class="button" id="tom_low">Tom Low (A)</button></li>
-            <li><button class="button" id="tom_mid">Tom Mid (S)</button></li>
-        </ul>
+            <ul class="bateria">
+                <li><button class="button" id="crash">Crash (R)</button></li>
+                <li><button class="button" id="hihat_close">HiHat Closed (Q)</button></li>
+                <li><button class="button" id="hihat_open">HiHat Open (W)</button></li>
+                <li><button class="button" id="kick">Kick (C)</button></li>
+                <li><button class="button" id="ride">Ride (E)</button></li>
+                <li><button class="button" id="snare">Snare (D)</button></li>
+                <li><button class="button" id="tom_high">Tom High (F)</button></li>
+                <li><button class="button" id="tom_low">Tom Low (A)</button></li>
+                <li><button class="button" id="tom_mid">Tom Mid (S)</button></li>
+            </ul>
         </div>
+
         <audio id="sound_crash" src="assets/sonidos/crash.wav" preload="auto"></audio>
         <audio id="sound_hihat_close" src="assets/sonidos/hihat-close.wav" preload="auto"></audio>
         <audio id="sound_hihat_open" src="assets/sonidos/hihat-open.wav" preload="auto"></audio>
@@ -61,84 +52,24 @@
         <audio id="sound_tom_low" src="assets/sonidos/tom-low.wav" preload="auto"></audio>
         <audio id="sound_tom_mid" src="assets/sonidos/tom-mid.wav" preload="auto"></audio>
 
+        <aside class="keys_chart">
+            <ul>
+                <li>Crash R </li>
+                <li>Ride E </li>
+                <li>HiHat Open W </li>
+                <li>HiHat Close Q </li>
+                <li>Tom High F </li>
+                <li>Tom Mid S </li>
+                <li>Kick C </li>
+                <li>Tom Low A </li>
+                <li>Snare D </li>
+            </ul>
+        </aside>
     </main>
+        
+    <footer class="footer"> 
+        <p>&copy; EQUIPO A - Andrea, Martin, Rodrigo, Cristina</p>
+    </footer> 
 
-    <!--CREACCION DE ASIDE CON LEYENDA DE LOS BOTONES(EN DESARROLLO!!)-->
-    <aside class="indiceTeclasAside">
-
-        <h2 class="indiceTeclasTitulo">TECLAS DEL JUEGO</h2>
-        <!--OPCION ASIDE 1 TABLA -->
-        <table class="indiceTeclasTabla">
-            <thead class="indiceTeclasTitulosTabla">
-                <th>BOTON PANTALLA</th>
-                <th>TECLA</th>
-    
-            </thead>
-            <tr>
-                <td class="indiceBotones">CRASH</td>
-                <td class="indiceTeclas">R</td>
-              
-            </tr>
-            <tr>
-                <td class="indiceBotones">HITHAT CLOSED</td>
-                <td class="indiceTeclas">Q</td>
-              
-            </tr>
-            <tr>
-                <td class="indiceBotones">HIHAT OPEN</td>
-                <td class="indiceTeclas">W</td>
-               
-            </tr>
-            <tr>
-                <td class="indiceBotones">KICK</td>
-                <td class="indiceTeclas">C</td>
-              
-            </tr>
-            <tr>
-                <td class="indiceBotones">RIDE</td>
-                <td class="indiceTeclas">E</td>
-              
-            </tr>
-            <tr>
-                <td class="indiceBotones">SNARE</td>
-                <td class="indiceTeclas">D</td>
-               
-            </tr>
-
-            <tr>
-                <td class="indiceBotones">TOM HIGH</td>
-                <td class="indiceTeclas">F</td>
-              
-            </tr>
-            <tr>
-                <td class="indiceBotones">TOM LOW</td>
-                <td class="indiceTeclas">A</td>
-              
-            </tr>
-            <tr>
-                <td class="indiceBotones">TOM MID</td>
-                <td class="indiceTeclas">S</td>
-               
-            </tr>
-
-        </table>
-
-        <!--OPCION ASIDE 2 LISTA EJEMPLO-->
-        <!--
-        <ul>
-            <li>CRASH----------| ? </li>
-            <li>RIDE-----------| ? </li>
-            <li>HIHAT OPEN-----| ? </li>
-            <li>CRASH----------| ? </li>
-            <li>TOM HIGH-------| ? </li>
-            <li>TOM MID--------| ? </li>
-            <li>KICK-----------| ? </li>
-            <li>BASS IZQUIERDO-| ? </li>
-            <li>BASS DERECHO---| ? </li>
-        </ul>-->
-    </aside>
-
-    <!--Añadir un footer con los nombres del grupo(¿OS GUSTARIA MEJORARLO?)-->
-    <footer class="pieDePagina">  &copy; EQUIPO A - Andrea, Martin, Rodrigo, Cristina </footer> 
 </body>
 </html>
