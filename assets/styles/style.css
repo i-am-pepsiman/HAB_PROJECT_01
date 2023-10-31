@@ -1,74 +1,194 @@
-body {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;300;400;500;900&display=swap');
+/* font-family: 'MuseoModerno', sans-serif; */
+
+* {
     padding: 0;
     box-sizing: border-box;
-
 }
-ul li{
+
+body {
+    font-family: 'MuseoModerno', sans-serif;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(../images/drumkit_wallpaper1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    padding-top: 70px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .8);
+    width: 80%;
+    align-self: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    max-height: 200px;
+    background-color: black;
+    margin-bottom: 100px;
+}
+
+.logo_square {
+    order: 1;
+    height: 200px;
+    width: 200px;
+    background-image: url(../images/thereItsNotPlanB.png);
+    background-position: center;
+    background-size: cover;    
+    justify-self: flex-start;
+}
+
+.contents_square {
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contents_square h1 {
+    text-shadow: 0px 0px 10px red;
+    position: relative;
+    top: -15px;
+    font-family: 'MuseoModerno', sans-serif;
+    font-size: 7rem;
+    order: 1;
+    text-align: center;
+    justify-self: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.navbar {
+    position: relative;
+    top: -60px;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    order: 2;
+    font-size: 1.5rem;
+    justify-self: center;
+    justify-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.navbar_list_item {
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.navbar_separator {
+    border-right: 1px solid white;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar_list_item, li {
     list-style: none;
 }
-h1 {
-    font-size: 2em;
-    color: black;
-    text-align: center;
-    text-shadow: 5px 5px 3px rgb(185, 185, 185);
-    margin-top: -10%;
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
-ul.bateria{
-    display: grid;
-    grid-template-areas: 
-            "a a a"
-            "b c c"
-            "b c c";
-    gap: 5px;
-    height: 1vh;            
+.button_container {
+    color: white;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 30px 5px;
+    margin-bottom: 100px;
 }
-.button {
+
+.button_container h3 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.drumpad {
+    display: flex;
+    max-width: 530px;
+    height: auto;  
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+}
+
+.drumpad_btn {
     background-color: rgb(246, 75, 75);
     width: 150px;
     height: 150px;
     display: grid;
-    border: 3px solid rgb(246, 75, 75);
+    border: none;
     justify-content: center;
     align-content: center;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 2px 2px 7px rgb(186, 14, 14);
     border-radius: 5px;
 }
-.button_container{
-    display: flex;
-    width: 70%;
-    margin-left: 30%;
-}
-.navigation_bar{
-    background-color: black;
-    margin-left: 400px;
-    margin-right: 400px;
-}
-.navigation_bar ul{
-    display: flex;
-    flex-direction: row;
-    
-}
-.navigation_bar li{
-    width: 20%;
-    text-align: center;
-    text-decoration: none;
-    justify-content: center;
-    
-}
-.navigation_bar a{
-    text-decoration: none;
+
+.keys_chart {
     color: white;
+    order: 1;
+    display: flex;
+    font-size: 1.5em;
+    padding: 20px;
+    margin: 30px;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 15px;
+    height: fit-content;
+    align-self: center;
 }
-.banner{
-    height: 50px;
-    display: inline-block;
-    position: relative;
-    top: 0;
+
+.keys_chart ul:first-child {
+    margin-left: 25px;
+    margin-right: 25px;
+    height: fit-content;
+}
+
+.keys_chart ul:last-child {
+    text-align: center;
+    height: fit-content;
+    margin-right: 25px;
+}
+
+footer {
+    color: red;
+    font-size: 1.5rem;
+    height: 100px;
+    background-color: black;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    position: static;
     left: 0;
-}
-div.banner img{
-    border: 1px solid black;
-    width: 150px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
