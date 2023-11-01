@@ -1,5 +1,5 @@
-"use strict;"
-
+"use strict";
+console.log("buenos dias ");
 const sound_crash = document.getElementById('sound_crash');
 const sound_hihat_close = document.getElementById('sound_hihat_close');
 const sound_hihat_open = document.getElementById('sound_hihat_open');
@@ -22,35 +22,35 @@ const keySoundPairs = {
     s: sound_tom_mid
 }
 
-
-/*Datos de la grabadora (comprueba si solo toca o tambien graba) */
 const drumSequence = [];
 let isRecording = false; // Variable to control if recording is being done
 
-
-// Function + cloneNode(true) allows to play sound in overlapping instances, so the .wav doesn't need to finish playing before the next one starts
-function playAudio(audioFile) {
-    const newAudioFile = audioFile.cloneNode(true);
-    newAudioFile.play();
+function recordDrumSound(audioElement) {
+    const currentTime = new Date().getTime();
+    drumSequence.push({ sound: audioElement, time: currentTime });
 }
-
+//
 document.addEventListener('click', (event) => {
     let clickedElement = document.getElementById(`sound_${event.target.id}`);
-    if (clickedElement) { playAudio(clickedElement); }
+    if (clickedElement) {
+        playAudio(clickedElement);
+        if (isRecording) {
+            recordDrumSound(clickedElement);
+        }
+    }
 });
 
 document.addEventListener('keydown', (event) => {
     const keyPressed = event.key;
-    if (keySoundPairs[keyPressed]) { playAudio(keySoundPairs[keyPressed]); }
+    if (keySoundPairs[keyPressed]) {
+        playAudio(keySoundPairs[keyPressed]);
+        if (isRecording) {
+            recordDrumSound(keySoundPairs[keyPressed]);
+        }
+    }
 });
 
-
-
-/* GRABADORA DE LA BATERIA*/
-////////////////////////////
-
-
-//EMPIEZA A GRABAR// 
+//start recording 
 const startRecordingButton = document.getElementById('startRecordingButton');
 const playRecordingButton = document.getElementById('playRecordingButton');
 
@@ -63,5 +63,23 @@ playRecordingButton.addEventListener('click', () => {
     playRecordedSequence();
 });
 
+//stop recording
+function playRecordedSequence() {
+    let index = 0;
+    const interval = 500; // Interval between the play of sounds 
 
-/*Falta que Rodri termine el stop de la grabadora */
+    const intervalId = setInterval(() => {
+        if (index < drumSequence.length) {
+            playAudio(drumSequence[index].sound);
+            index++;
+        } else {
+            clearInterval(intervalId); // stops the interval when it has finished 
+        }
+    }, interval);
+}
+
+//allows play the sound  
+function playAudio(audioFile) {
+    const newAudioFile = audioFile.cloneNode(true);
+    newAudioFile.play();
+}

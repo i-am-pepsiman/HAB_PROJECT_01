@@ -1,0 +1,32 @@
+/*revision necesaria por parte del equipo en cuuanto a estilo una vez hecho borrar este comentario */
+
+
+body{
+    color:black;
+    background-color: antiquewhite;
+    
+}   
+#contenido{
+display: flexbox;
+
+}
+
+
+h1{
+    font-size: 30px;
+    color: brown;
+}
+h2{
+    font-size: 25px;
+    color:chocolate
+}
+h3{
+    font-size: 20;
+    color: #e1991e;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+p{
+    font-size: 20px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    
+}
