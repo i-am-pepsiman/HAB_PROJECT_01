@@ -22,6 +22,12 @@ const keySoundPairs = {
     s: sound_tom_mid
 }
 
+
+/*Datos de la grabadora (comprueba si solo toca o tambien graba) */
+const drumSequence = [];
+let isRecording = false; // Variable to control if recording is being done
+
+
 // Function + cloneNode(true) allows to play sound in overlapping instances, so the .wav doesn't need to finish playing before the next one starts
 function playAudio(audioFile) {
     const newAudioFile = audioFile.cloneNode(true);
@@ -37,3 +43,25 @@ document.addEventListener('keydown', (event) => {
     const keyPressed = event.key;
     if (keySoundPairs[keyPressed]) { playAudio(keySoundPairs[keyPressed]); }
 });
+
+
+
+/* GRABADORA DE LA BATERIA*/
+////////////////////////////
+
+
+//EMPIEZA A GRABAR// 
+const startRecordingButton = document.getElementById('startRecordingButton');
+const playRecordingButton = document.getElementById('playRecordingButton');
+
+startRecordingButton.addEventListener('click', () => {
+    isRecording = true;
+});
+
+playRecordingButton.addEventListener('click', () => {
+    isRecording = false;
+    playRecordedSequence();
+});
+
+
+/*Falta que Rodri termine el stop de la grabadora */
