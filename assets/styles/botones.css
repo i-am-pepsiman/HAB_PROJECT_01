@@ -3,16 +3,17 @@
 .button_recorder {
     width: 400px;
     color: white;
-    display: flex;
     flex-direction: column;
     text-align: center;
     background-color: black;
     border: 3px solid white;
     border-radius: 15px;
     padding: 30px 5px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     align-self: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /*Edicion botones*/
@@ -20,7 +21,7 @@
     background-color: rgb(246, 75, 75);
     width: 150px;
     height: 50px;
-    display: grid;
+    display: inline-block;
     border: none;
     justify-content: center;
     align-content: center;
@@ -33,7 +34,7 @@
     background-color: rgb(246, 75, 75);
     width: 150px;
     height: 50px;
-    display: grid;
+    display: inline-block;
     border: none;
     justify-content: center;
     align-content: center;
