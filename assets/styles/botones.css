@@ -1,5 +1,50 @@
 
+/*BOTONES GRABADORA INDEX*/
 
+
+/*border radius de el container para que sea igual 
+ 
+    border: 3px solid white;
+        border-radius: 15px;
+
+*/
+
+/*Falta la edicion del contenedor de los botones (EN DESARROLLO!)*/
+.button_container {
+    color: white;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 15px;
+    
+padding: 30px 5px;
+    margin-bottom: 100px;
+    width: 50%; /* Ancho personalizado */
+    align-self: center;
+}
+
+
+.button_recorder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    padding-top: 70px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 80%;
+    align-self: center;
+    align-items: center; /* Para centrar horizontalmente */
+}
+
+/*Edicion botones*/
 #startRecordingButton {
     background-color: rgb(246, 75, 75);
     width: 150px;
@@ -24,3 +69,45 @@
     box-shadow: 2px 2px 7px rgb(186, 14, 14);
     border-radius: 5px;
 }
+
+
+/*MEDIA QUERIES BOCETO PRUEBAS*/
+
+/*MOVIL*/
+
+/*meter la edicion reducida index para movil(EN DESARROLLO!)*/
+@media(max-width:767px){
+
+    body{
+ 
+     background-color: black;
+ 
+    }
+ 
+ }
+ 
+ /*TABLETS*/
+ /*ajustar la version de movil al tamaño*/
+ @media(max-width:1023px){
+ 
+     body{
+ 
+         background-color: blue;
+ 
+     }
+ 
+ }
+ 
+ /*SOBREMESA*/
+ 
+ /*Encapsular dentro el css de styles.css (index) para formato extendido pc */
+ @media(min-width:1024px){
+ 
+ 
+     body{background-color: aqua;
+ 
+     }
+ 
+ }
+ 
+ 
