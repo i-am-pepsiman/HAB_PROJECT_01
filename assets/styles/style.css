@@ -180,6 +180,19 @@ main {
     margin-right: 25px;
 }
 
+.drum_comp{
+    background-color: rgb(246, 75, 75);
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 2px 7px rgb(186, 14, 14);
+    border-radius: 5px;
+    border: none;
+    margin-top: 40%;
+}
+
+.price{
+    background-color: white;
+}
 footer {
     color: red;
     font-size: 1.5rem;
