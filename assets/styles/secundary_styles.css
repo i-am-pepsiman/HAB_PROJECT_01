@@ -1,34 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;300;400;500;900&display=swap');
-/* font-family: 'MuseoModerno', sans-serif; */
 
-* {
+*{
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: 'MuseoModerno', sans-serif;
-    background-color: grey;
+    background-color: white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    background-image: url(../images/drumkit_wallpaper1.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.wrapper {
-    padding-top: 70px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, .8);
-    width: 80%;
-    align-self: center;
 }
-
 header {
     width: 100%;
     display: flex;
@@ -37,6 +22,27 @@ header {
     margin-bottom: 100px;
 }
 
+.intro{
+    text-align: center;
+    margin-top: 5%;
+    text-decoration: underline 2px solid black;
+    text-shadow: 0px 0px 10px red;
+}
+
+h1.intro, h2, h3, h4{
+    text-align: center;
+    text-decoration: underline 2px solid black;
+    text-shadow: 0px 0px 10px red;
+}
+
+p {
+    margin-left: 2%;
+}
+
+table{
+    margin-left: 40%;
+    
+}
 .logo_square {
     order: 1;
     height: 200px;
@@ -79,7 +85,6 @@ header {
     justify-self: center;
     justify-items: center;
     display: grid;
-
 }
 
 .navbar ul{
@@ -97,87 +102,31 @@ header {
 }
 
 .navbar_separator {
-    border-right: 1px solid white;
+    border-right: 1px solid black;
 }
 
 .navbar a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .navbar_list_item, li {
     list-style: none;
 }
 
-main {
-    display: flex;
-    justify-content: center;
+table{
+    border: 2px solid red;
+    box-shadow: 0px 0px 10px black;
+    width: 50%;
+    position: relative;
+    right: 15%;
+}
+td{
+    padding: 2%;
 }
 
-.button_container {
-    color: white;
-    order: 2;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: black;
-    border: 3px solid white;
-    border-radius: 15px;
-    padding: 30px 5px;
-    margin-bottom: 100px;
-}
-
-.button_container h3 {
-    font-size: 3rem;
-    margin: 0;
-}
-
-.drumpad {
-    display: flex;
-    max-width: 530px;
-    height: auto;  
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
-    align-content: center;
-}
-
-.drumpad_btn {
-    background-color: rgb(246, 75, 75);
-    width: 150px;
-    height: 150px;
-    display: grid;
-    border: none;
-    justify-content: center;
-    align-content: center;
-    box-shadow: 2px 2px 7px rgb(186, 14, 14);
-    border-radius: 5px;
-}
-
-.keys_chart {
-    color: white;
-    order: 1;
-    display: flex;
-    font-size: 1.5em;
-    padding: 20px;
-    margin: 30px;
-    background-color: black;
-    border: 3px solid white;
-    border-radius: 15px;
-    height: fit-content;
-    align-self: center;
-}
-
-.keys_chart ul:first-child {
-    margin-left: 25px;
-    margin-right: 25px;
-    height: fit-content;
-}
-
-.keys_chart ul:last-child {
-    text-align: center;
-    height: fit-content;
-    margin-right: 25px;
+h2#introducing{
+    margin-top: 5%;
 }
 
 footer {
@@ -194,4 +143,3 @@ footer {
     text-align: center;
     justify-content: center;
 }
-
