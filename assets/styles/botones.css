@@ -16,7 +16,7 @@
 }
 
 /*Edicion botones*/
-#startRecordingButton {
+#startRecordingButton, #stopRecordingButton, #playRecordingButton {
     background-color: rgb(246, 75, 75);
     width: 150px;
     height: 50px;
@@ -26,22 +26,8 @@
     align-content: center;
     box-shadow: 2px 2px 7px rgb(186, 14, 14);
     border-radius: 5px;
+    margin: 3px;
 }
-
-
-#playRecordingButton{
-    background-color: rgb(246, 75, 75);
-    width: 150px;
-    height: 50px;
-    display: grid;
-    border: none;
-    justify-content: center;
-    align-content: center;
-    box-shadow: 2px 2px 7px rgb(186, 14, 14);
-    border-radius: 5px;
-}
-
-/*Falta la edicion del contenedor de los botones (EN DESARROLLO!)*/
 
 
 /*MEDIA QUERIES BOCETO PRUEBAS*/

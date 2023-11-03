@@ -55,12 +55,10 @@ header {
     justify-content: space-between;
 }
 
-.contents_square h1 {
+.main_title, .alt_title {
     text-shadow: 0px 0px 10px red;
-    position: relative;
-    top: -15px;
     font-family: 'MuseoModerno', sans-serif;
-    font-size: 7rem;
+    font-size: 6rem;
     order: 1;
     text-align: center;
     justify-self: center;
@@ -68,10 +66,13 @@ header {
     margin-block-end: 0;
 }
 
+.alt_title {
+    display: none;
+}
+
 .navbar {
     position: relative;
-    top: -60px;
-    left: -5%;
+    top: -40px;
     width: 100%;
     height: 100px;
     order: 2;
@@ -87,6 +88,7 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
+    background-color: black;
 }
 
 .navbar_list_item {
@@ -109,9 +111,31 @@ header {
     list-style: none;
 }
 
+.navbar_list_item a {
+    transition: color 0.2s;
+}
+
+.navbar_list_item a:hover {
+    color: rgb(166, 106, 222);
+}
+
+.navbar_list_item a:active {
+    color: rgb(128, 76, 177);
+}
+
 main {
     display: flex;
     justify-content: center;
+}
+
+.content_main {
+    display: block;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin: 0 30px 50px 30px;
+    border: 3px solid white;
+    border-radius: 20px;
 }
 
 .button_container {
@@ -193,6 +217,72 @@ main {
 .price{
     background-color: white;
 }
+
+.intro {
+    text-align: center;
+    margin-top: 5%;
+    text-decoration: underline 2px solid black;
+    text-shadow: 0px 0px 10px red;
+}
+
+h1.intro, h2, h3, h4 {
+    text-align: center;
+    text-decoration: underline 2px solid black;
+    text-shadow: 0px 0px 10px red;
+}
+
+p {
+    margin: 0 30px;
+    text-indent: 40px;
+}
+
+table {
+    margin-left: 40%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border: 2px solid red;
+    box-shadow: 0px 0px 10px black;
+    width: 50%;
+    position: relative;
+    right: 15%;
+}
+
+td {
+    padding: 2%;
+}
+
+h2#introducing {
+    margin-top: 5%;
+}
+
+.button_recorder {
+    width: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 30px 5px;
+    margin-bottom: 100px;
+    align-self: center;
+    align-items: center;
+}
+
+#startRecordingButton, #stopRecordingButton, #playRecordingButton {
+    background-color: rgb(246, 75, 75);
+    width: 150px;
+    height: 50px;
+    display: grid;
+    border: none;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 2px 2px 7px rgb(186, 14, 14);
+    border-radius: 5px;
+    margin: 3px;
+}
+
 footer {
     color: red;
     font-size: 1.5rem;
@@ -206,5 +296,18 @@ footer {
     width: 100%;
     text-align: center;
     justify-content: center;
+}
+
+/* Media query for small desktop screens */
+@media (max-width: 1600px) {
+    .main_title {
+        display: none;
+    }
+
+    .alt_title {
+    display: block;
+    font-size: 6rem;
+    margin-bottom: 15px;
+    }
 }
 
