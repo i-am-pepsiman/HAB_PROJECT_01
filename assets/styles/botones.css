@@ -47,12 +47,12 @@
  
  /*AJUSTES GENERICOS*/
 
- .noticiasbody{
+ /*.noticiasbody{
     background-color: rgb(34, 36, 36);
-  }
+  }*/
   /******************************/
 
-  article {
+  /*article {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +73,7 @@
 
 }
  /*AJUSTES INDIVIDUALES*/
- .fotoPrincipalNoticias {
+ /*.fotoPrincipalNoticias {
     text-align: center;
     width:100%;
     height:100%;
