@@ -72,7 +72,7 @@ header {
 
 .navbar {
     position: relative;
-    top: -40px;
+    top: -60px;
     width: 100%;
     height: 100px;
     order: 2;
@@ -204,11 +204,11 @@ main {
     margin-right: 25px;
 }
 
-.drum_comp{
+.drum_comp {
+    text-shadow: none;
     background-color: rgb(246, 75, 75);
     width: 150px;
     height: 150px;
-    box-shadow: 2px 2px 7px rgb(186, 14, 14);
     border-radius: 5px;
     border: none;
     border-right: 1px solid black;
@@ -218,17 +218,28 @@ main {
     font-size: 1.25em;
 }
 
-.plus, .less{
+.plus, .less {
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 3px;
+    margin-bottom: 20px;
     background-color: black;
     color: white;
-    box-shadow: -10px 5px 10px #F64B4B;
-}
-.plus, .less{
     height: 50px;
-    width: 150px;
+    width: 50px;
     margin-top: -40%;
+    align-self: center;
 }
-.price{
+
+.plus_less_button_wrapper {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.price {
     background-color: white;
 }
 
@@ -241,7 +252,6 @@ main {
 
 h1.intro, h2, h3, h4 {
     text-align: center;
-    text-decoration: underline 2px solid black;
     text-shadow: 0px 0px 10px red;
 }
 
@@ -297,25 +307,27 @@ h2#introducing {
     margin: 3px;
 }
 
-#total_price, #total_priceh3{
+.price_tag {
+    align-self: center;
     color: white;
-    width: 200px;
+    min-width: 200px;
     height: 200px;
-    margin-top: 7%;
     text-align: center;
     padding-top: 50px;
     background-image: linear-gradient(to right, black, rgb(107, 73, 73),  #f64b4b);
 }
-#total_priceh3{
-    text-decoration: 2px black underline;
-    text-shadow: 5px 5px 10px black;
+#total_priceh3, #total_price {
+    text-shadow: none;
+    font-family: 'MuseoModerno', sans-serif;
+    text-align: center;
 }
 
-#navdrumComp{
-    background-color: rgba(0, 0, 0, 0.7);
+#total_price {
+    position: relative;
+    right: 20px;
 }
 
-ul{
+ul {
     margin-top: 50px;
 }
 
@@ -342,7 +354,7 @@ footer {
 
     .alt_title {
     display: block;
-    font-size: 6rem;
+    font-size: 5rem;
     margin-bottom: 15px;
     }
 }
