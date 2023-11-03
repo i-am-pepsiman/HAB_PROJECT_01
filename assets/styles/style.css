@@ -187,11 +187,46 @@ main {
     box-shadow: 2px 2px 7px rgb(186, 14, 14);
     border-radius: 5px;
     border: none;
+    border-right: 1px solid black;
     margin-top: 40%;
+    text-align: center;
+    padding-top: 30%;
+    font-size: 1.25em;
 }
 
+.plus, .less{
+    background-color: black;
+    color: white;
+    box-shadow: -10px 5px 10px #F64B4B;
+}
+.plus, .less{
+    height: 50px;
+    width: 150px;
+    margin-top: -40%;
+}
 .price{
     background-color: white;
+}
+#total_price, #total_priceh3{
+    color: white;
+    width: 200px;
+    height: 200px;
+    margin-top: 7%;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(to right, black, rgb(107, 73, 73),  #f64b4b);
+}
+#total_priceh3{
+    text-decoration: 2px black underline;
+    text-shadow: 5px 5px 10px black;
+}
+
+#navdrumComp{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+ul{
+    margin-top: 50px;
 }
 footer {
     color: red;
