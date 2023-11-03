@@ -36,44 +36,64 @@
     margin: 3px;
 }
 
+  /*EDICION DE NOTICIAS RELACIONADAS*/
 
-/*MEDIA QUERIES BOCETO PRUEBAS*/
-
-/*MOVIL*/
-
-/*meter la edicion reducida index para movil(EN DESARROLLO!)*/
-@media(max-width:767px){
-
-    body{
+/*
+    background-image: url(../images/color-violeta-claro-brillante-bateria-foco_693425-5754.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
  
-     background-color: black;
- 
-    }
- 
+ /*AJUSTES GENERICOS*/
+
+ /*.noticiasbody{
+    background-color: rgb(34, 36, 36);
+  }*/
+  /******************************/
+
+  /*article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.tituloseccionesNoticias {
+    color: black;
+}
+.text-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+.fotosSecciones{
+    width: 600px;
+
+}
+ /*AJUSTES INDIVIDUALES*/
+ /*.fotoPrincipalNoticias {
+    text-align: center;
+    width:100%;
+    height:100%;
  }
- 
- /*TABLETS*/
- /*ajustar la version de movil al tamaño*/
- @media(max-width:1023px){
- 
-     body{
- 
-         background-color: blue;
- 
-     }
- 
- }
- 
- /*SOBREMESA*/
- 
- /*Encapsular dentro el css de styles.css (index) para formato extendido pc */
- @media(min-width:1024px){
- 
- 
-     body{background-color: aqua;
- 
-     }
- 
- }
- 
- 
+
+
+
+/*.ImagenRoboBateriaLenon {
+    display: flex;
+    align-items:flex-start;
+    gap: 20px;
+    max-width: 100%;
+    border: 100px solid black;
+}
+
+/*.text-container */
+
+/*.ImagenRoboBateriaLenon {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
