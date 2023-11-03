@@ -15,13 +15,16 @@ let totalElement = document.getElementById('total_price');
 let totalPrice = 0;
 
 document.addEventListener('click', (event) => {
-    let clickedElement = event.target.id 
-    let priceId = clickedElement.split('_')
+    let clickedElement = event.target.id;
+    let priceId = clickedElement.split('_');
     if (priceId[0] === 'plus'){
-        totalPrice += prices[priceId[1]]
-
+        totalPrice += prices[priceId[1]];
     } else if(priceId[0] === 'less'){
-        totalPrice -= prices[priceId[1]]
+        if (totalPrice > 0 && totalPrice - prices[priceId[1]] > 0) {
+            totalPrice -= prices[priceId[1]];
+        } else {
+            totalPrice = 0;
+        }
     }
-    totalElement.innerHTML = `${totalPrice}`
+    totalElement.innerHTML = `€ ${totalPrice}`;
 })
