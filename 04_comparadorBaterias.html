@@ -6,6 +6,7 @@
     <title>COMPARADOR DE PRECIOS DE BATERIAS</title>
     <link rel="icon" type="image/vnd.icon" href="assets/images/thereItsNotPlanB.png">
     <link rel="stylesheet" href="assets/styles/style.css">
+    <script src="script02.js" defer></script>
 </head>
 <body>
 
@@ -14,7 +15,7 @@
         <div class="logo_square"></div>
         <div class="contents_square">
             <h1>ATEAM DRUMPAD SYSTEM</h1> 
-            <nav class="navbar">
+            <nav class="navbar" id="navdrumComp">
                 <ul id="navbar_list">
                     <li class="navbar_list_item"><a href="index.html">Inicio</a></li>
                     <li class="navbar_separator"></li>
@@ -31,59 +32,63 @@
     </header>
     <main>
     <ul>
-        <li><button class="drum_comp">Crash - 60€</button></li>
-        <li><button class="plus">Añadir</button></li>
-        <li><button class="less">Quitar (-)</button></li>
-        <p class="price">"PRECIO"</p>
+        <li><h3 class="drum_comp">Crash - 60€</h3></li>
+        <li><button class="plus" id="plus_crash">Añadir</button></li>
+        <li><button id="less_crash" class="less">Quitar (-)</button></li>
+        
     </ul>
     <ul>
-        <li><button class="drum_comp">HiHat Closed - 50€</button></li>
-        <li><button class="plus">Añadir</button></li>
-        <li><button class="less">Quitar (-)</button></li>
-        <p class="price">"PRECIO"</p>
+        <li><h3 class="drum_comp">HiHat Closed - 50€</h3></li>
+        <li><button class="plus" id="plus_hihatClosed">Añadir</button></li>
+        <li><button class="less" id="less_hihatClosed">Quitar (-)</button></li>
+        
     </ul>
     <ul>
-        <li><button class="drum_comp">HiHat Open - 50€</button></li>
-        <li><button class="plus">Añadir</button></li>
-        <li><button class="less">Quitar (-)</button></li>
-        <p class="price">"PRECIO"</p>
+        <li><h3 class="drum_comp">HiHat Open - 50€</h3></li>
+        <li><button class="plus" id="plus_hihatOpen">Añadir</button></li>
+        <li><button class="less" id="less_hihatOpen">Quitar (-)</button></li>
+        
     </ul>
     <ul>
-        <li><button class="drum_comp">Kick - 80€</button></li>
-        <li><button class="plus">Añadir</button></li>
-        <li><button class="less">Quitar (-)</button></li>
-        <p class="price">"PRECIO"</p>
+        <li><h3 class="drum_comp">Kick - 80€</h3></li>
+        <li><button class="plus" id="plus_kick">Añadir</button></li>
+        <li><button class="less" id="less_kick">Quitar (-)</button></li>
+        
     </ul>
     <ul>
-        <li><button class="drum_comp">Ride - 70€</button></li>
-        <li><button class="plus">Añadir</button></li>
-        <li><button class="less">Quitar (-)</button></li>
-        <p class="price">"PRECIO"</p>
+        <li><h3 class="drum_comp">Ride - 70€</h3></li>
+        <li><button class="plus" id="plus_ride">Añadir</button></li>
+        <li><button class="less" id="less_ride">Quitar (-)</button></li>
+        
     </ul>
     <ul>
-        <li><button class="drum_comp">Snare - 30€</button></li>
-        <li><button class="plus">Añadir</button></li>
-        <li><button class="less">Quitar (-)</button></li>
-        <li><p class="price">"PRECIO"</p></li>
+        <li><h3 class="drum_comp">Snare - 30€</h3></li>
+        <li><button class="plus" id="plus_snare">Añadir</button></li>
+        <li><button class="less" id="less_snare">Quitar (-)</button></li>
+        <li></li>
     </ul>
     <ul>
-        <li><button class="drum_comp">Tom High - 100€</button></li>
-        <li><button class="plus">Añadir</button></li>
-        <li><button class="less">Quitar (-)</button></li>
-        <p class="price">"PRECIO"</p>
+        <li><h3 class="drum_comp">Tom High - 100€</h3></li>
+        <li><button class="plus" id="plus_tomHigh">Añadir</button></li>
+        <li><button class="less" id="less_tomHigh">Quitar (-)</button></li>
+        
     </ul>
     <ul>
-        <li><button class="drum_comp">Tom Low - 60€</button></li>
-        <li><button class="plus">Añadir</button></li>
-        <li><button class="less">Quitar (-)</button></li>
-        <p class="price">"PRECIO"</p>
+        <li><h3 class="drum_comp">Tom Low - 60€</h3></li>
+        <li><button class="plus" id="plus_tomLow">Añadir</button></li>
+        <li><button class="less" id="less_tomLow">Quitar (-)</button></li>
+        
     </ul>
     <ul>
-        <li><button class="drum_comp">Tom Mid - 90€</button></li>
-        <li><button class="plus">Añadir</button></li>
-        <li><button class="less">Quitar (-)</button></li>
-        <p class="price">"PRECIO"</p>
+        <li><h3 class="drum_comp">Tom Mid - 90€</h3></li>
+        <li><button class="plus" id="plus_tomMid">Añadir</button></li>
+        <li><button class="less" id="less_tomMid">Quitar (-)</button></li>
+        
     </ul>
+    
+    <h3 id="total_priceh3">Precio Total:
+        <p id="total_price"></p>
+    </h3>
     </main>
     <footer class="pieDePagina">  &copy; EQUIPO A - Andrea, Martin, Rodrigo, Cristina </footer> 
 </body>
