@@ -27,4 +27,4 @@ document.addEventListener('click', (event) => {
         }
     }
     totalElement.innerHTML = `€ ${totalPrice}`;
-})
+});
