@@ -18,9 +18,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-body p{
+
+body p
+{
     font-size: 1.8em;
 }
+
 .wrapper {
     padding-top: 70px;
     flex: 1;
@@ -138,6 +141,12 @@ main {
     margin: 0 30px 50px 30px;
     border: 3px solid white;
     border-radius: 20px;
+}
+
+.content_main figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .button_container {
