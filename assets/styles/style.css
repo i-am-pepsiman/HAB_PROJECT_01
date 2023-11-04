@@ -85,7 +85,10 @@ header {
     justify-self: center;
     justify-items: center;
     display: grid;
+}
 
+.navbar_list_480 {
+    display: none;
 }
 
 .navbar ul{
@@ -101,6 +104,10 @@ header {
     text-decoration: none;
     justify-content: center;
     padding: 0 15px;
+}
+
+#navbar_list_480 {
+    display: none;
 }
 
 .navbar_separator {
@@ -147,6 +154,58 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+main section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
+section > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+section h3 {
+    width: 100%; 
+}
+  
+section p {
+    text-align: justify;
+    margin: 20px;
+}
+  
+.tableFoto {
+    display: flex ;
+    text-align: left;
+    justify-content: space-around;
+    width: 80%;
+}
+  
+.tableFoto img {
+    width: 300px;
+    height: auto;
+}
+  
+.tableFoto table {
+    margin-left: 30px;
+}
+  
+section table {
+    width: fit-content;
+    text-align: right;
+    padding: 20px;
 }
 
 .button_container {
@@ -325,8 +384,10 @@ h2#introducing {
     height: 200px;
     text-align: center;
     padding-top: 50px;
-    background-image: linear-gradient(to right, black, rgb(107, 73, 73),  #f64b4b);
+    background-color: #f64b4b;
+    border: 3px solid white;
 }
+
 #total_priceh3, #total_price {
     text-shadow: none;
     font-family: 'MuseoModerno', sans-serif;
@@ -340,6 +401,62 @@ h2#introducing {
 
 ul {
     margin-top: 50px;
+}
+
+.purchase_elements_container {
+    gap: 5px;
+    display: flex;
+    color: white;
+    width: 700px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+#purchase_part_crash {
+    background-image: url(../images/purchase_parts/crash.jpeg);
+    background-size: cover;
+}
+
+#purchase_part_hihat {
+    background-image: url(../images/purchase_parts/hihat.jpeg);
+    background-size: cover;
+}
+
+#purchase_part_kick {
+    background-image: url(../images/purchase_parts/kick.jpeg);
+    background-size: cover;
+}
+
+#purchase_part_ride {
+    background-image: url(../images/purchase_parts/ride.jpeg);
+    background-size: cover;
+}
+
+#purchase_part_snare {
+    background-image: url(../images/purchase_parts/snare.jpeg);
+    background-size: cover;
+    color: black;
+}
+
+#purchase_part_tomhigh {
+    background-image: url(../images/purchase_parts/tomhigh.jpeg);
+    background-size: cover;
+}
+
+#purchase_part_tomlow {
+    background-image: url(../images/purchase_parts/tomlow.jpeg);
+    background-size: cover;
+}
+
+#purchase_part_tommid {
+    background-image: url(../images/purchase_parts/tommid.webp);
+    background-size: cover;
 }
 
 footer {
@@ -357,16 +474,205 @@ footer {
     justify-content: center;
 }
 
-/* Media query for small desktop screens */
-@media (max-width: 1600px) {
+/* Media queries my boy */
+
+@media screen and (max-width: 480px) {
+    body {
+        background-image: none;
+        background-color: black;
+        width: 100%;
+    }
+
+    body p {
+        font-size: 1em;
+    }
+
+    .content_main {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        margin-bottom: 30px;
+        border-bottom: 1px solid white;
+    }
+
+    .logo_square {
+        width: 100px;
+        height: 100px;
+    }
+
+    #navbar_list {
+        display: none;
+    }
+
+    #navbar_list_480 {
+        font-size: 3rem;
+        margin-top: 70px;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .contents_square h1 {
+        display: none;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: black;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button_container {
+        margin-bottom: 30px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .keys_chart {
+        display: none;
+    }
+
+    .drumpad_btn {
+        width: 140px;
+        height: 140px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .drumpad_btn span {
+        display: none;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+    .purchase_elements_container {
+        margin-bottom: 30px;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-image: none;
+        background-color: black;
+        width: 100%;
+    }
+
+    body p {
+        font-size: 1em;
+    }
+
+    .content_main {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        margin-bottom: 30px;
+        border-bottom: 1px solid white;
+    }
+
+    .logo_square {
+        width: 100px;
+        height: 100px;
+    }
+
+    #navbar_list {
+        display: none;
+    }
+
+    #navbar_list_480 {
+        font-size: 3rem;
+        margin-top: 70px;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .contents_square h1 {
+        display: none;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: black;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .keys_chart {
+        display: none;
+    }
+
+    .drumpad_btn {
+        width: 155px;
+        height: 155px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .drumpad_btn span {
+        display: none;
+    }
+
+    footer {
+        font-size: 1em;
+        margin-top: 50px;
+    }
+
+    .purchase_elements_container {
+        margin-bottom: 30px;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1600px) {
     .main_title {
         display: none;
     }
 
     .alt_title {
     display: block;
-    font-size: 5rem;
+    font-size: 4em;
     margin-bottom: 15px;
     }
-}
 
+    .navbar_list_item {
+        font-size: .8em;
+    }
+
+    footer {
+        font-size: 1em;
+        margin-top: 50px;
+    }
+}

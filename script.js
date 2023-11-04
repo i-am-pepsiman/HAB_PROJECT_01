@@ -1,5 +1,5 @@
 "use strict";
-console.log("buenos dias ");
+
 const sound_crash = document.getElementById('sound_crash');
 const sound_hihat_close = document.getElementById('sound_hihat_close');
 const sound_hihat_open = document.getElementById('sound_hihat_open');
@@ -9,6 +9,12 @@ const sound_snare = document.getElementById('sound_snare');
 const sound_tom_high = document.getElementById('sound_tom_high');
 const sound_tom_low = document.getElementById('sound_tom_low');
 const sound_tom_mid = document.getElementById('sound_tom_mid');
+
+const startRecordingButton = document.getElementById('startRecordingButton');
+const playRecordingButton = document.getElementById('playRecordingButton');
+
+const drumSequence = [];
+let isRecording = false;
 
 const keySoundPairs = {
     r: sound_crash,
@@ -21,9 +27,6 @@ const keySoundPairs = {
     a: sound_tom_low,
     s: sound_tom_mid
 }
-
-const drumSequence = [];
-let isRecording = false; // Variable to control if recording is being done
 
 function recordDrumSound(audioElement) {
     const currentTime = new Date().getTime();
@@ -50,10 +53,6 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-//start recording 
-const startRecordingButton = document.getElementById('startRecordingButton');
-const playRecordingButton = document.getElementById('playRecordingButton');
-
 startRecordingButton.addEventListener('click', () => {
     isRecording = true;
 });
@@ -63,22 +62,21 @@ playRecordingButton.addEventListener('click', () => {
     playRecordedSequence();
 });
 
-//stop recording
+// Stop recording
 function playRecordedSequence() {
     let index = 0;
-    const interval = 500; // Interval between the play of sounds 
+    const interval = 500; // Interval between sounds 
 
     const intervalId = setInterval(() => {
         if (index < drumSequence.length) {
             playAudio(drumSequence[index].sound);
             index++;
         } else {
-            clearInterval(intervalId); // stops the interval when it has finished 
+            clearInterval(intervalId);
         }
     }, interval);
 }
-
-//allows play the sound  
+  
 function playAudio(audioFile) {
     const newAudioFile = audioFile.cloneNode(true);
     newAudioFile.play();
