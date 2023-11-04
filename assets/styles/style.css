@@ -18,7 +18,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+body p{
+    font-size: 1.8em;
+}
 .wrapper {
     padding-top: 70px;
     flex: 1;
