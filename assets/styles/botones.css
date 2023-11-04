@@ -37,43 +37,5 @@
 }
 
 
-/*MEDIA QUERIES BOCETO PRUEBAS*/
 
-/*MOVIL*/
-
-/*meter la edicion reducida index para movil(EN DESARROLLO!)*/
-@media(max-width:767px){
-
-    body{
- 
-     background-color: black;
- 
-    }
- 
- }
- 
- /*TABLETS*/
- /*ajustar la version de movil al tamaño*/
- @media(max-width:1023px){
- 
-     body{
- 
-         background-color: blue;
- 
-     }
- 
- }
- 
- /*SOBREMESA*/
- 
- /*Encapsular dentro el css de styles.css (index) para formato extendido pc */
- @media(min-width:1024px){
- 
- 
-     body{background-color: aqua;
- 
-     }
- 
- }
- 
  

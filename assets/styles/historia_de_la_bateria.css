@@ -1,0 +1,51 @@
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section h3 {
+  width: 100%; 
+}
+
+section p {
+  text-align: justify;
+  margin: 20px;
+}
+
+section figure {
+  flex: 1;
+  text-align: left;
+  margin: 20px;
+}
+
+section table {
+  flex: 1;
+  text-align: right;
+  margin: 20px;
+}
